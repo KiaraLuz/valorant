@@ -1,27 +1,14 @@
-import { Agents } from './components/Agents';
-import { Navbar } from './components/Navbar';
-import { useState, useEffect } from 'react';
+import { Agents } from "./components/Agents";
+import { Navbar } from "./components/Navbar";
+import { useFetchAgents } from "./hooks/useFetchAgents";
 
 export default function App() {
-  //fetch agents
-  const [agents, setAgents] = useState([]);
+  const { agents, loading } = useFetchAgents();
 
-  useEffect(() => {
-    const fetchAgents = async () => {
-      try {
-        const response = await fetch('https://valorant-api.com/v1/agents');
-        const data = await response.json();
-        setAgents(data.data);
-      } catch (error) {
-        console.error('Error fetching agents:', error);
-      }
-    };
-
-    fetchAgents();
-  }, []);
+  if (loading) return <div>Loading...</div>;
 
   return (
-    <main className='overflow-hidden max-h-svh'>
+    <main className="overflow-hidden max-h-svh">
       <Navbar />
       <Agents agents={agents} />
     </main>
