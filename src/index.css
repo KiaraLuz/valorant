@@ -16,6 +16,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  width: 100%;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -34,8 +35,13 @@ body {
   min-height: 100vh;
 }
 
+@media screen and (min-height: 600px) {
+  body {
+    height: 100%;
+  }
+}
+
 .btn {
-  /* Clean style */
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -44,7 +50,6 @@ body {
   padding: 0;
   color: var(--button-text-color);
   cursor: pointer;
-  /* Clean style */
 
   --button-text-color: var(--background-color);
   --button-text-color-hover: var(--button-background-color);
@@ -201,4 +206,8 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.clip-diagonal-right {
+  clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%);
 }
