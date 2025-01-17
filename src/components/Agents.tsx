@@ -27,9 +27,9 @@ export function Agents({ agents }: Props) {
   }
 
   return (
-    <div className="grid-rows-2 grid-cols-1 grid sm:grid-cols-2 sm:grid-rows-1 px-4 sm:px-20 py-5 sm:h-svh gap-4">
+    <div className="relative max-w-[1440px] grid-rows-2 grid-cols-1 grid sm:grid-cols-2 sm:grid-rows-1 px-4 sm:px-20 py-5 sm:h-svh gap-4 mx-auto">
       <div
-        className={`transition-all absolute sm:top-[180px] sm:left-[80px] top-[140px]  text-transparent font-extrabold uppercase font-tungsten text-[clamp(4.5rem,15vw,9.5rem)] ${
+        className={`transition-all absolute sm:top-[100px] sm:left-[80px] top-[80px] left-[15px] text-transparent font-extrabold uppercase font-tungsten text-[clamp(4.5rem,15vw,9.5rem)] ${
           isChanging ? "opacity-0 scale-90" : "opacity-100 scale-100"
         }`}
         style={{
@@ -40,7 +40,7 @@ export function Agents({ agents }: Props) {
       </div>
 
       <div
-        className={`sm:block hidden transition-all absolute left-[-10px] bottom-[150px] -rotate-90 ${
+        className={`sm:block hidden transition-all absolute left-[-10px] bottom-[200px] -rotate-90 ${
           isChanging ? "opacity-0 scale-90" : "opacity-100 scale-100"
         }`}
         style={{
