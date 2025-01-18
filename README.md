@@ -13,7 +13,7 @@ Asegúrate de tener instalados los siguientes programas en tu sistema:
 
 1. Clona este repositorio:
 
-   ```bash
+   ```
    git clone https://github.com/tu-usuario/valorant-agents-app.git
    cd valorant-agents-app
    ```
@@ -22,14 +22,10 @@ Asegúrate de tener instalados los siguientes programas en tu sistema:
 
    ```
    npm install
-   # o si usas yarn
-   yarn install
    ```
 
 3. Inicia el servidor de desarrollo:
 
    ```
    npm run dev
-    # o si usas yarn
-    yarn dev
    ```
