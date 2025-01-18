@@ -2,6 +2,8 @@
 
 Una aplicación web que muestra a los agentes de Valorant y sus habilidades, desarrollada con **React**, **TypeScript**, **Tailwind CSS** y **Swiper.js**.
 
+![url](https://github.com/KiaraLuz/valorant/blob/main/public/img-readme.webp?raw=true)
+
 ## Requisitos Previos
 
 Asegúrate de tener instalados los siguientes programas en tu sistema:
