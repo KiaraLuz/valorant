@@ -1,7 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+// @ts-ignore
 import "swiper/css";
+// @ts-ignore
 import "swiper/css/effect-cards";
 
 import { Keyboard, EffectCards } from "swiper/modules";
