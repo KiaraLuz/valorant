@@ -27,9 +27,9 @@ export function Agents({ agents }: Props) {
   }
 
   return (
-    <div className="relative max-w-[1440px] grid-rows-2 grid-cols-1 grid sm:grid-cols-2 sm:grid-rows-1 px-4 sm:px-20 py-5 sm:h-svh gap-4 mx-auto">
+    <div className="relative max-w-[1440px] grid-rows-2 grid-cols-1 grid md:grid-cols-2 md:grid-rows-1 px-4 md:px-20 py-5 md:h-svh gap-4 mx-auto">
       <div
-        className={`transition-all absolute sm:top-[100px] sm:left-[80px] top-[80px] left-[15px] text-transparent font-extrabold uppercase font-tungsten text-[clamp(4.5rem,15vw,9.5rem)] ${
+        className={`transition-all absolute md:top-[100px] md:left-[80px] top-[80px] left-[15px] text-transparent font-extrabold uppercase font-tungsten text-[clamp(4.5rem,15vw,9.5rem)] ${
           isChanging ? "opacity-0 scale-90" : "opacity-100 scale-100"
         }`}
         style={{
@@ -40,7 +40,7 @@ export function Agents({ agents }: Props) {
       </div>
 
       <div
-        className={`sm:block hidden transition-all absolute left-[-10px] bottom-[200px] -rotate-90 ${
+        className={`md:block hidden transition-all absolute left-[-10px] bottom-[200px] -rotate-90 ${
           isChanging ? "opacity-0 scale-90" : "opacity-100 scale-100"
         }`}
         style={{
@@ -64,7 +64,7 @@ export function Agents({ agents }: Props) {
       </div>
 
       <div
-        className={`flex flex-col max-w-xl gap-8 transition-all duration-300 ease-in-out transform ${
+        className={`flex flex-col w-full md:max-w-xl  gap-8 transition-all duration-300 ease-in-out transform ${
           isChanging ? "opacity-0 scale-90" : "opacity-100 scale-100"
         }`}
       >

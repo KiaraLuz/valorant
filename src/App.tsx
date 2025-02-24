@@ -8,7 +8,7 @@ export default function App() {
   if (loading) return <div>Loading...</div>;
 
   return (
-    <main className="overflow-hidden sm:max-h-svh relative">
+    <main className="overflow-hidden md:max-h-svh relative">
       <Navbar />
       <Agents agents={agents} />
     </main>
